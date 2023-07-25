@@ -1,4 +1,4 @@
-let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+let fruit = [" Apple", " Orange", " Apple", " Apple", " Orange"]
 let appleShelf = document.getElementById("apple-shelf")
 let orangeShelf = document.getElementById("orange-shelf")
 
@@ -6,3 +6,14 @@ let orangeShelf = document.getElementById("orange-shelf")
 // and the oranges onto the orangeShelf. Use a for loop,
 // a conditional statement, and the textContent property.
 
+function sortingFruits() {
+    for (let i = 0; i < fruit.length; i++){
+        if (fruit[i] === " Apple") {
+            appleShelf.textContent += fruit[i]
+        } else {
+            orangeShelf.textContent += fruit[i]
+        }
+    }
+}
+
+sortingFruits()
